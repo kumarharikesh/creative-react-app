@@ -102,12 +102,13 @@ class TodoApp extends React.Component {
     // const {handleSubmit} = this.addItem(this.state.newItem);
     return (
       <div className="logo-cont" style={{paddingBottom: this.state.paddingbottom}}>
-        <img src={logo} className="rotating-logo" 
-          alt="" 
-          target="_blank"
-          href="https://kumarharikesh-portfolio.netlify.app/" 
-          title="A home is made of hopes and dreams where our story begins…"
-        />
+        <a target="_blank"
+          rel="noreferrer"
+          href="https://the-creative-vibe-zone.netlify.app/" 
+          title="A home where hopes and dreams kept…" 
+        >
+        <img src={logo} className="rotating-logo" alt="" />
+        <a/>
         <div className="owner">HarryStyle</div>
         <hr className="hr" />
 

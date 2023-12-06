@@ -108,7 +108,7 @@ class TodoApp extends React.Component {
           title="A home where hopes and dreams kept…" 
         >
         <img src={logo} className="rotating-logo" alt="" />
-        <a/>
+            </a>
         <div className="owner">HarryStyle</div>
         <hr className="hr" />
 

@@ -1,0 +1,179 @@
+.logo-cont {
+  margin: 0;
+  background-color: darkcyan;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 10px;
+  padding-top: 50px;
+  /* padding-bottom: 70px; */
+}
+
+/* logo spin */
+.rotating-logo {
+  width: 100px;
+  height: auto;
+  animation: rotate 5s infinite linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.logo-cont .owner {
+  font-size: xxx-large;
+  font-family: cursive;
+  font-weight: 800;
+}
+.logo-cont > .hr {
+  width: 40%;
+  background-color: #fdfdfd;
+  border-top: 5px dashed #8c8b8b;
+  /* border-top: 5px dotted #8c8b8b; */
+  /* border-top: 3px double #fdfdfd; */
+  /* height: 8px; */
+}
+@media (max-width: 750px) {
+  .logo-cont .hr {
+    width: 60%;
+    border-top: 3px dashed #8c8b8b;
+  }
+  .logo-cont .owner {
+    font-size: x-large;
+    font-weight: 700;
+  }
+}
+.inputSection {
+  padding: 20px;
+  padding-top: 60px;
+}
+.inputText {
+  background: white;
+  color: black;
+  text-align: left;
+  padding: 4px 5px;
+  font-size: 14px;
+  border-radius: 0.435rem;
+  font-family: cursive;
+}
+.addBtn {
+  background: #fcd000;
+  color: rgb(90, 87, 87);
+  margin-left: 10px;
+  padding: 5px;
+  font-weight: 500;
+  font-size: 12px;
+  border-radius: 0.435rem;
+  box-shadow: 3px 3px 0 0 rgba(62, 58, 3, 0.986);
+}
+button.addBtn:not(:disabled) {
+  cursor: pointer;
+  color: black;
+  background: #ff9d00;
+}
+.list {
+  /* padding: 0 5px 0; */
+  max-width: 100%;
+}
+.list li,
+.list ol {
+  background: rgb(161, 156, 155);
+  padding-left: 3rem;
+  /* background: #fff; */
+}
+.li {
+  background: rgb(38, 235, 38);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  border-top-left-radius: 30%;
+  border-bottom-left-radius: 30%;
+  color: rgb(7, 7, 7);
+  margin-bottom: 15px;
+  padding: 8px;
+  border: 1px solid #fdfdfd;
+  box-shadow: 6px 6px 0 1px rgba(0, 0, 0, 0.544);
+  /* box-shadow: 6px 6px 0 1px rgba(0, 0, 0, 0.353); */
+}
+
+.list ol li div label {
+  background-color: rgb(38, 235, 38);
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+.list ol li div input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  color: rgba(56, 48, 48, 0.473);
+}
+
+.list ol li div input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.deleteBtn {
+  background-color: rgb(255, 38, 0);
+  margin-right: 8px;
+  margin-left: 10px;
+  border-radius: 0.5rem;
+  font-style: italic;
+  font-size: 11px;
+  color: #fdfdfd;
+  box-shadow: 2px 2px 0 0 rgba(10, 10, 10, 0.292);
+}
+.deleteBtn:hover {
+  background-color: darkred;
+  transition: 0.5s;
+}
+
+/* // ///////////////////////jkk */
+/* for ol number styling */
+
+/* @import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700"); */
+
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+  padding: 20px 30px 10px 50px;
+  border-radius: 0.235rem;
+  color: black;
+  /* box-shadow: 3px 3px 0 0 rgba(243, 83, 83, 0.986); */
+  box-shadow: 3px 3px 0 0 rgba(62, 58, 3, 0.986);
+}
+ol li {
+  margin: 0 0 0.5rem 0;
+  counter-increment: my-awesome-counter;
+  position: relative;
+}
+ol li::before {
+  content: counter(my-awesome-counter);
+  color: #ffd900;
+  color: #ff9d00;
+  font-size: 2.5rem;
+  font-weight: bold;
+  position: absolute;
+  --size: 30px;
+  left: calc(-1 * var(--size) - -12px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  transform: rotate(-10deg);
+  background: #fff;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: 10px;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.544);
+}

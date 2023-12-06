@@ -1,0 +1,238 @@
+.headerHome {
+  margin: 0;
+  padding: 50px 0;
+  min-height: 80vh;
+  display: block;
+  position: relative;
+  background: #f8f8f8 no-repeat;
+}
+.headerHome .profile-img {
+  margin-right: 30px;
+}
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+.containerhome {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+div {
+  display: block;
+}
+.containerhome:before {
+  display: table;
+  content: " ";
+}
+.containerhome:after {
+  clear: both;
+  display: table;
+  content: " ";
+}
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.headerHome .name-wrapper h1 {
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 0 0 5px;
+}
+.headerHome .home:before {
+  display: table;
+  content: " ";
+}
+.headerHome .home:after {
+  clear: both;
+}
+.col_md_3 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 30px;
+  padding-left: 0px;
+}
+/* .home .data_field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+} */
+.headerHome .name-wrapper .h1 {
+  color: #444;
+  margin: 0 0 5px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+  display: block;
+}
+.headerHome .name-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.headerHome .name-wrapper span {
+  font-size: 20px;
+  font-weight: 330;
+  color: #ff5722;
+}
+.headerHome .data_field .p {
+  display: block;
+  /* background-color: bisque; */
+  color: #848484;
+  margin: 0 0 10px;
+  margin-bottom: 20px;
+  padding-top: 16px;
+  text-align: left;
+  line-height: 1.8em;
+  font-size: 15px;
+  font-weight: 300;
+}
+.headerHome .data_field .p {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+#data {
+  /* float: left; */
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  align-items: flex-start;
+  /* justify-content: left; */
+}
+.headerHome .personal-details {
+  margin: 15px 50px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* margin-top: 10px; */
+}
+.headerHome .personal-details strong {
+  font-size: 13px;
+  font-weight: 700;
+  color: #444;
+  display: block;
+  line-height: 1;
+  padding-bottom: 3px;
+}
+.headerHome .personal-details span {
+  color: #989898;
+}
+.headerHome .personal-details small {
+  font-size: 12px;
+  font-weight: 300;
+  color: #989898;
+}
+.social-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  list-style: none;
+  padding-left: 0;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.social-icon li {
+  list-style-type: none;
+  padding-right: 5px;
+  transition: 0.5s;
+  opacity: 0.6;
+}
+.social-icon li:hover {
+  opacity: 1;
+}
+.social-icon li.facebook a {
+  background: transparent url(img/social-icon-set.png) 378px -15px;
+}
+.social-icon li.twitter a {
+  background: transparent url(img/social-icon-set.png) 347px -15px;
+}
+.social-icon li.linkedin a {
+  background: transparent url(img/social-icon-set.png) 252px -15px;
+}
+.social-icon li.hackerrank a {
+  background: transparent url(img/social-icon-set.png) 315px -80px;
+}
+.social-icon li.git a {
+  background: transparent url(img/social-icon-set.png) 315px -113px;
+}
+.social-icon li.hackerrank a,
+.social-icon li.git a,
+.social-icon li.linkedin a,
+.social-icon li.twitter a,
+.social-icon li.facebook a {
+  width: 30px;
+  height: 30px;
+  display: block;
+  text-indent: -9999px;
+  border-radius: 0.2rem;
+  border: 1.6px solid rgba(0, 0, 0, 0.231);
+}
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 0;
+
+  /* object-fit: cover;
+  width: 100%;
+  height: 300px; */
+  /* padding-top: 10%; */
+}
+img {
+  vertical-align: middle;
+}
+
+@media (max-width: 600px) {
+  .headerHome {
+    padding: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .headerHome {
+    padding: 20px 0;
+  }
+  .headerHome .profile-img {
+    margin: 0 0 30px;
+  }
+}
+@media (max-width: 900px) {
+  .containerhome {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+}
+@media (min-width: 768px) {
+  .containerhome {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .containerhome {
+    width: 970px;
+  }
+  .home {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: center;
+  }
+  .img-responsive {
+    max-height: 850px;
+  }
+  #data {
+    display: flex;
+    flex-direction: row;
+    justify-content: centre;
+  }
+}

@@ -1,0 +1,43 @@
+.app {
+  background-color: rgba(118, 50, 81, 0.775);
+  background-image: url("img/sunny-Bacground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0px 50px 0px;
+  /* color: rgb(10, 160, 10) */
+}
+@media (max-width: 600px) {
+  .app {
+    padding: 0px 20px 0px;
+  }
+}
+@media (max-width: 400px) {
+  .app {
+    padding: 0px 5px 0px;
+  }
+}
+#main_container {
+  min-height: 80vh;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#form_container {
+  padding: 15px 15px;
+  margin: 30px 20px 50px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  height: 100%;
+  /* position: inherit; */
+}
+form label,
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form button[type="submit"],
+form textarea[type="textarea"] {
+  font-size: 14px;
+}
+.btn:hover {
+  color: #212529;
+  background-color: #dee2e6;;
+}

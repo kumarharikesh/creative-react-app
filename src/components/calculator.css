@@ -1,0 +1,103 @@
+#calciback {
+  background-color: lavender;
+  /* background: #f8f8f8 no-repeat; */
+  min-height: 80vh;
+  padding: 50px 20px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#calciback h2{
+  font-family: sans-serif;
+  color: #ff5722;
+}
+#calci {
+  background: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  /* margin-left: 10px;
+  margin-right: 10px; */
+  -moz-box-align: center;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.658),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 100%;
+  height: auto;
+  max-width: 400px;
+  width: auto;
+  padding-bottom: 70px;
+  border-radius: 1.5rem;
+  border: 1px solid lightslategray;
+}
+
+.btnclass {
+  height: 20%px;
+  width: 25%;
+  font-size: 25px;
+  /* margin: 1px; */
+  padding: 15px;
+  float: left;
+  border-radius: 1rem;
+}
+#res {
+  background-color: rgb(226, 226, 226);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: solid;
+  height: 60px;
+  font-size: 18px;
+  margin: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 0.6rem;
+}
+#btns {
+  margin: 30px;
+}
+#btns button:hover {
+  color: rgb(105, 6, 6);
+}
+#btn0,
+#btn1 {
+  background-color: lightseagreen;
+  color: rgb(255, 17, 17);
+}
+#btnClr {
+  background-color: lightcoral;
+  color: white;
+}
+#btnEql {
+  background-color: green;
+  color: white;
+}
+#btnSum,
+#btnSub,
+#btnMul,
+#btnDiv {
+  background-color: rgb(75, 76, 78);
+  color: red;
+}
+#cont #img {
+  /* height: auto; */
+  height: auto;
+  width: 150px;
+  border: lightgray;
+}
+@media (max-width: 500px) {
+  #calci {
+    max-width: 340px;
+  }
+  .btnclass {
+    font-size: 16px;
+  }
+  #res {
+    height: 50px;
+  }
+}
+@media (max-width: 400px) {
+  .btnclass {
+    font-size: 14px;
+  }
+}

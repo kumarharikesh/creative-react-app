@@ -22,7 +22,7 @@ Recent update December, 2023<br/>
 
 # Project Link
 
-[https://the-creative-vibe-zone.netlify.app/](https://harikesh-creative-react.netlify.app/)
+[https://harikesh-creative-react.netlify.app/]
 
 <br/>
 <br/>

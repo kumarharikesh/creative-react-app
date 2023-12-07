@@ -71,7 +71,7 @@ class HomeApp extends React.Component {
 
                 <div>
                   <div className="personal-details">
-                    <strong>HINDI <span>(NATIVE)</span>, ENGLISH <span>(INTERMEDIATE)</span></strong>
+                    <strong>HINDI <span>(NATIVE)</span>, ENGLISH <span>(FLUENT)</span></strong>
                     <small>LANGUAGE</small>
                   </div>
                 </div>

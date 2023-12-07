@@ -9,7 +9,7 @@ function App() {
     background: "#ff5722",
     color: "#2E0929",
     borderRadius: "3rem",
-    padding: "0px 5px",
+    padding: "0 5px 3px",
   };
 
   if (hours < 12) {
@@ -23,14 +23,15 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="footerApp">
       <footer className="footer">
-        <h3 style={styles}>{`Good.${timeOfDay}.!!.`}</h3>
+        <h3 style={styles}>{`..Good ${timeOfDay}👋..`}</h3>
         <p>
           Learn REACT by <a href="https://youtu.be/nvHeB32ICDM">Hitesh's</a>{" "}
           crash course
         </p>
       </footer>
+      <span>© HarryStyle. All Rights Reserved.</span>
     </div>
   );
 }

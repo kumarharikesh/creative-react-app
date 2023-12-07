@@ -85,7 +85,7 @@ button.addBtn:not(:disabled) {
 .list li,
 .list ol {
   background: rgb(161, 156, 155);
-  padding-left: 2rem;
+  padding-left: 2.5rem;
   /* background: #fff; */
 }
 .li {

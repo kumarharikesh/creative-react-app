@@ -2,11 +2,13 @@
   background-color: lavender;
   background: conic-gradient(
     from 0deg,
+    #104045,
     #1a1a1a,    /* Dark Gray */
     #332f41,    /* Dark Purple */
-    #545167,    /* Slate Gray */
-    #2b2b3a,    /* Charcoal */
-    #1a1a1a     /* Dark Gray */
+    #989c9d,   /* Slate Gray */
+    #332f41,    /* Charcoal */
+    #1a1a1a,
+    #104045    /* Dark Gray */
   );
   min-height: 80vh;
   padding: 50px 20px 50px;

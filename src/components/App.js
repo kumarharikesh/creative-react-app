@@ -160,7 +160,7 @@ class TodoApp extends React.Component {
             <li id="fixli">
               <div className="li" /*style={{background: "green"},{}}*/>
                 <input type="checkbox" name="" id="checkbox" />
-                <label>Study for MidSem 📑</label>
+                <label>MidSem Study 📑</label>
                 <button className="deleteBtn" onClick={() => this.DeleteHomeli()}>
                   Delete
                 </button>

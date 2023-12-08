@@ -9,7 +9,7 @@ function App() {
     background: "#ff5722",
     color: "#2E0929",
     borderRadius: "3rem",
-    padding: "0 5px 3px",
+    padding: "0 5px 2.5px",
   };
 
   if (hours < 12) {

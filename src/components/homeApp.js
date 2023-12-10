@@ -8,6 +8,52 @@ class HomeApp extends React.Component {
     super(props);
     this.state = { paddingtop: "150px" };
   }
+
+  owner = {
+    name: 'Harikesh Patel',
+    designation: 'System Engineer',
+    employer: 'TCS',
+    profileImageUrl: ProfileImage,
+    profileImageLink: "https://kumarharikesh.github.io/",
+    description: "Credibly embrace visionary internal or 'organic' sources and business benefits. Collaboratively integrate efficient portals rather than customized customer service. Assertively deliver frictionless services via leveraged interfaces. Conveniently evisculate accurate sources andprocess-centric expertise.Energistically fabricate customized imperatives through cooperative catalysts for change.",
+    DOB: 'JULY 24, 1999',
+    nationality: 'INDIA',
+    language: {
+      l1: 'HINDI',
+      t1: '(NATIVE)',
+      l2: 'ENGLISH',
+      t2: '(FLUENT)',
+    },
+  };
+  ownerSocialLinks = [
+    {
+      url: 'https://www.facebook.com/profile.php?id=100022095913969',
+      title: 'Like me on Facebook',
+      className: 'facebook',
+    },
+    {
+      url: 'https://twitter.com/Harikes49467657',
+      title: 'Follow me on Twitter',
+      className: 'twitter',
+    },
+    {
+      url: 'https://www.linkedin.com/in/harikesh-patel-357171191',
+      title: 'Connect with me on Linkedin',
+      className: 'linkedin',
+    },
+    {
+      url: 'https://github.com/kumarharikesh',
+      title: 'Checkout my git Repo',
+      className: 'github',
+    },
+    {
+      url: 'https://www.hackerrank.com/Harikesh_Patel',
+      title: 'Follow me on Hackerrank',
+      className: 'hackerrank',
+    },
+  ]
+
+
   // OnScroll
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
@@ -34,65 +80,53 @@ class HomeApp extends React.Component {
 
             <div className="col_md_3">
               <div className="profile-img">
-                <a href="https://kumarharikesh.github.io/" target="_blank" rel="noreferrer">
-                  <img src={ProfileImage} className="img-responsive" alt="" />
+                <a href={this.owner.profileImageLink} target="_blank" rel="noreferrer">
+                  <img src={this.owner.profileImageUrl} className="img-responsive" alt="" />
                 </a>
               </div>
             </div>
 
             <div className="data_field" >
               <div className="name-wrapper">
-                <h1 className="h1">Harikesh Patel</h1>
-                <span>System Engineer at TCS</span>
+                <h1 className="h1">{this.owner.name}</h1>
+                <span>{this.owner.designation} at {this.owner.employer}</span>
               </div>
 
-              <p className="p">
-                Credibly embrace visionary internal or "organic" sources and business benefits. Collaboratively
-                integrate efficient portals rather than customized customer service. Assertively deliver
-                frictionless services via leveraged interfaces. Conveniently evisculate accurate sources and
-                process-centric expertise.Energistically fabricate customized imperatives through cooperative
-                catalysts for change.
-              </p>
+              <p className="description">{this.owner.description}</p>
 
               <div id="data">
                 <div className="co_-md_3">
                   <div className="personal-details">
-                    <strong>JULY 24, 1999</strong>
+                    <strong>{this.owner.DOB}</strong>
                     <small>BIRTH</small>
                   </div>
                 </div>
 
                 <div className="col_md_3">
                   <div className="personal-details">
-                    <strong>INDIA</strong>
+                    <strong>{this.owner.nationality}</strong>
                     <small>NATIONALITY</small>
                   </div>
                 </div>
 
                 <div>
                   <div className="personal-details">
-                    <strong>HINDI <span>(NATIVE)</span>, ENGLISH <span>(FLUENT)</span></strong>
+                    <strong>{this.owner.language.l1} <span>{this.owner.language.t1}</span>, {this.owner.language.l2} <span>{this.owner.language.t2}</span></strong>
                     <small>LANGUAGE</small>
                   </div>
                 </div>
               </div>
 
               <ul className="social-icon">
-                <li className="facebook">
-                  <a href="https://www.facebook.com/profile.php?id=100022095913969" rel="noreferrer" title="Like me on Facebook" target="_blank">facebook</a>
-                </li>
-                <li className="twitter">
-                  <a href="https://twitter.com/Harikes49467657" rel="noreferrer" title="Follow me on Twitter" target="_blank">twitter</a>
-                </li>
-                <li className="linkedin">
-                  <a href="https://www.linkedin.com/in/harikesh-patel-357171191" rel="noreferrer" title="Connect with me on Linkedin" target="_blank">linkedin</a>
-                </li>
-                <li className="git">
-                  <a id="github" href="https://github.com/kumarharikesh" rel="noreferrer" title="Checkout my git Repo" target="_blank" data-clipboard-text="harikeshpatel24@gmail.com">github</a>
-                </li>
-                <li className="hackerrank">
-                  <a href="https://www.hackerrank.com/Harikesh_Patel" rel="noreferrer" title="Follow me on Hackerrank" target="_blank">hackerrank</a>
-                </li>
+                {this.ownerSocialLinks.map(link =>
+                  <li className={link.className}>
+                    <a href={link.url} 
+                      title={link.title}
+                      rel="noreferrer"
+                      target="_blank"
+                      />
+                  </li>
+                )}                
               </ul>
             </div>
 

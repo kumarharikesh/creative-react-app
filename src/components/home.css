@@ -84,7 +84,7 @@ div {
   font-weight: 330;
   color: #ff5722;
 }
-.headerHome .data_field .p {
+.headerHome .data_field .description {
   display: block;
   /* background-color: bisque; */
   color: #848484;
@@ -96,7 +96,7 @@ div {
   font-size: 15px;
   font-weight: 300;
 }
-.headerHome .data_field .p {
+.headerHome .data_field .description {
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
@@ -163,11 +163,11 @@ div {
 .social-icon li.hackerrank a {
   background: transparent url(img/social-icon-set.png) 315px -80px;
 }
-.social-icon li.git a {
+.social-icon li.github a {
   background: transparent url(img/social-icon-set.png) 315px -113px;
 }
 .social-icon li.hackerrank a,
-.social-icon li.git a,
+.social-icon li.github a,
 .social-icon li.linkedin a,
 .social-icon li.twitter a,
 .social-icon li.facebook a {
@@ -183,11 +183,6 @@ div {
   max-width: 100%;
   height: auto;
   border: 0;
-
-  /* object-fit: cover;
-  width: 100%;
-  height: 300px; */
-  /* padding-top: 10%; */
 }
 img {
   vertical-align: middle;
@@ -197,6 +192,9 @@ img {
   .headerHome {
     padding: 20px;
   }
+  .img-responsive {
+    max-width: 80%;
+  }
 }
 @media (max-width: 768px) {
   .headerHome {
@@ -205,6 +203,10 @@ img {
   .headerHome .profile-img {
     margin: 0 0 30px;
   }
+  .img-responsive {
+    max-width: 70%;
+  }
+  
 }
 @media (max-width: 900px) {
   .containerhome {
@@ -215,6 +217,9 @@ img {
 @media (min-width: 768px) {
   .containerhome {
     width: 750px;
+  }
+  .img-responsive {
+    max-width: 60%;
   }
 }
 @media (min-width: 992px) {
@@ -229,6 +234,7 @@ img {
   }
   .img-responsive {
     max-height: 850px;
+    max-width: 100%;
   }
   #data {
     display: flex;

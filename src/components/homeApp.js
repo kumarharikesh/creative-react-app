@@ -13,8 +13,8 @@ class HomeApp extends React.Component {
     name: 'Harikesh Patel',
     designation: 'System Engineer',
     employer: 'TCS',
-    profileImageUrl: ProfileImage,
-    profileImageLink: "https://kumarharikesh.github.io/",
+    profileImage: ProfileImage,
+    profileImageLink: "https://the-creative-vibe-zone.netlify.app/",
     description: "Credibly embrace visionary internal or 'organic' sources and business benefits. Collaboratively integrate efficient portals rather than customized customer service. Assertively deliver frictionless services via leveraged interfaces. Conveniently evisculate accurate sources andprocess-centric expertise.Energistically fabricate customized imperatives through cooperative catalysts for change.",
     DOB: 'JULY 24, 1999',
     nationality: 'INDIA',
@@ -81,7 +81,7 @@ class HomeApp extends React.Component {
             <div className="col_md_3">
               <div className="profile-img">
                 <a href={this.owner.profileImageLink} target="_blank" rel="noreferrer">
-                  <img src={this.owner.profileImageUrl} className="img-responsive" alt="" />
+                  <img src={this.owner.profileImage} className="img-responsive" alt="" />
                 </a>
               </div>
             </div>

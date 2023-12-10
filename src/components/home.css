@@ -206,7 +206,9 @@ img {
   .img-responsive {
     max-width: 70%;
   }
-  
+  .headerHome .name-wrapper .h1 {
+    font-size: 30px;
+  }
 }
 @media (max-width: 900px) {
   .containerhome {

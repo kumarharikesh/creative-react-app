@@ -71,13 +71,13 @@ class RouteApp extends React.Component {
                 <NavLink className="Link" exact='true' to="/" >Home</NavLink>
               </li>
               <li >
-                <NavLink className="Link" to="/calculate" activeclassname="activeLink" activestyle={{color: "#ff5722"}} >Calculate</NavLink>
+                <NavLink className="Link" to="/calculate" activeClassName="active" activestyle={{color: "#ff5722"}} >Calculate</NavLink>
               </li>
               <li >
-                <NavLink className="Link" to="/fun" activeclassname="activeLink" activestyle={{color: "#ff5722"}}>BirdApp</NavLink>
+                <NavLink className="Link" to="/fun" activeClassName="active" activestyle={{color: "#ff5722"}}>BirdApp</NavLink>
               </li>
               <li >
-                <NavLink className="Link" to="/contact" activeclassname="activeLink" activestyle={{color: "#ff5722"}}>Contact Me</NavLink>
+                <NavLink className="Link" to="/contact" activeClassName="active" activestyle={{color: "#ff5722"}}>Contact Me</NavLink>
               </li>
             </ul>
           </div>

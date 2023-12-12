@@ -1,13 +1,3 @@
-/* .header {
-  position: sticky;
-  position: absolute;
-  position: fixed;
-  position: relative;
-  top: 0;
-  z-index: 100;
-  width: 100%;
-} */
-
 .router-header {
   /* background: rgb(187, 224, 224); */
   background-color: #000000;
@@ -85,9 +75,8 @@
     margin-inline-start: 20px;
   }
 }
-.activeLink {
-  text-shadow: 0 0 0.9px #333, 0 0 0.9px #333, 0 0 0.9px #333;
-  /* text-shadow: 0 0 0.65px #333, 0 0 0.65px #333; */
+ul > li > a:focus, ul > li > a:hover{
+  text-decoration: none;
   background: conic-gradient(
     from 90deg at 50% -120%,
     gold,
@@ -109,10 +98,10 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  display: inline-block;
+  /* display: inline-block; */
 }
-ul > li :hover {
-  text-decoration: none;
+.active {
+  font-size: x-large;
   background: conic-gradient(
     from 90deg at 50% -120%,
     gold,
